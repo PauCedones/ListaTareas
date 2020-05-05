@@ -1,0 +1,1 @@
+const listaTweets = document.querySelector('#lista-tweets') 
