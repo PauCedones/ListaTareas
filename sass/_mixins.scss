@@ -1,0 +1,6 @@
+/* Smartphones (portrait) */
+
+@mixin phone {
+    @media (max-width: 599px) { 
+        @content; }
+  }

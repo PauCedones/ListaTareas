@@ -1,3 +1,4 @@
+/* Smartphones (portrait) */
 body {
   background: black;
   display: flex;
@@ -81,6 +82,26 @@ body .container .lista-tarea .borrar-tarea:hover {
   background: black;
   color: white;
   transition: all 0.3s ease;
+}
+
+@media (max-width: 599px) {
+  body .container {
+    width: 290px;
+  }
+  body .container h1 {
+    width: 200px;
+    padding-top: 50px;
+  }
+  body .container form textarea {
+    width: 270px;
+    height: 70px;
+  }
+  body .container .lista-tarea {
+    font-size: 20px;
+  }
+  body .container .lista-tarea .borrar-tarea {
+    margin-left: 10px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,3 +1,6 @@
+@import 'mixins';
+
+
 body{
     background: black;
     display: flex;
@@ -85,4 +88,30 @@ body{
             }
         }
     }
+}
+
+@include phone {
+    body{
+        .container{
+            width:290px;
+            h1{
+                width: 200px;
+                padding-top: 50px;
+            }
+            form{
+                textarea{
+                    width: 270px;
+                    height: 70px;
+                }
+            }
+            .lista-tarea{
+                font-size: 20px;
+                .borrar-tarea{
+                    
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    
 }
