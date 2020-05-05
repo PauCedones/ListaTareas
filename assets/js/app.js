@@ -8,15 +8,12 @@ eventListeners();
 
 function eventListeners () {
 
-    // Enviar Formularia
+    // Enviar Formulario
     document.querySelector('#formulario').addEventListener('submit',agregarTweet);
+
+    // Borrar Tweets
+    listaTweets.addEventListener('click', borrarTweet);
 }
-
-
-
-
-
-
 
 
 //FUNCIONES ////
@@ -36,11 +33,19 @@ function agregarTweet (e) {
     //crear elemento y añadir el contenido a la lista
     const li = document.createElement('li');
     li.innerText = tweet;
+    // añade el boton borrar al tweet
     li.appendChild(botonBorrar);
+    // añade el tweet a la lista
     listaTweets.appendChild(li);
+}
 
+function borrarTweet (e) {
+    e.preventDefault();
+    if(e.target.className === 'borrar-tweet'){
+        return(e.target.parentElement.remove());
+        alert('Tweet Eliminado');
+    }
     
-    
-    console.log(tweet);
+
 }
 
