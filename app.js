@@ -32,6 +32,9 @@ function agregarTarea (e) {
 
     //Añadir a Local Storage
     agregarTareaLocalStorage(tarea);
+
+    //reset del textarea 
+    formulario.reset()
 }
 //Ver los tareas 
 function visualizarTarea (tarea){
