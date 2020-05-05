@@ -1,0 +1,86 @@
+body {
+  background: black;
+  display: flex;
+  justify-content: center;
+}
+body .container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(0deg, #22c1c3 0%, #fd2da4 100%);
+  border-radius: 5%;
+  border: 5px solid white;
+  padding: 25px;
+  font-family: abril-display, serif;
+  color: white;
+}
+body .container h1 {
+  display: inline-block;
+  width: 300px;
+  background-color: black;
+  font-weight: 700;
+  padding-bottom: 10px;
+  padding-top: 100px;
+  text-align: center;
+  margin-top: -25px;
+}
+body .container h2 {
+  font-size: 25px;
+}
+body .container label {
+  padding-bottom: 5px;
+}
+body .container form {
+  display: flex;
+  flex-direction: column;
+}
+body .container form textarea {
+  width: 600px;
+  height: 300px;
+  border: 5px dotted black;
+  outline: none;
+  background-color: transparent;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+body .container form input {
+  margin-top: 20px;
+  width: 100px;
+  height: 50px;
+  align-self: center;
+  border: 2px solid black;
+  background-color: transparent;
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 25px;
+  cursor: pointer;
+}
+body .container form input:hover {
+  background: black;
+  color: white;
+  transition: all 0.3s ease;
+}
+body .container .lista-tarea {
+  color: black;
+  font-family: monospace;
+  font-size: 25px;
+}
+body .container .lista-tarea .borrar-tarea {
+  margin-left: 50px;
+  float: right;
+  border: 2px solid black;
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+body .container .lista-tarea .borrar-tarea:hover {
+  background: black;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/*# sourceMappingURL=main.css.map */

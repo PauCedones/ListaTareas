@@ -4,35 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/skeleton.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <title>TAREAS</title>
+    <link rel="stylesheet" href="css/main.css">
+   
+    
+    <link rel="stylesheet" href="https://use.typekit.net/qml8dqe.css">
 </head>
 <body>
 
-    <div id="contenido">
-        <div class="container">
+    <div id="contenido" class="container">
 
-            <h1>Local Storage</h1>
-            <div class="row">
-                <div class="six columns">
-                    <label for="tweet">Tweet:</label>
-                    <form action="#" id="formulario">
-                            <label for="tweet"></label>
-                            <textarea id="tweet" class="u-full-width"></textarea>
-                            <input type="submit" class="button u-full-width button-primary" value="Agregar">
-                    </form>
-                </div>
-                <div class="six columns">
-                    <h2>Mis Tweets</h2>
-                    <div id="lista-tweets"></div>
-                </div>
-            </div>
-
-        </div>
+        <h1>LISTA DE TAREAS</h1>
+        
+        <!--FORMULARIO-->
+        <form action="#" id="formulario">
+                <label for="tarea"></label>
+                <textarea id="tarea"></textarea>
+                <input type="submit" class="button u-full-width button-primary" value="ADD">
+        </form>
+    
+        <h2>T A R E A S</h2>
+        <div id="lista-tareas"></div>
+                
     </div> <!--#contenido-->
 
-    <script src="assets/js/app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
